@@ -32,7 +32,7 @@ pipeline{
 
     stage('run application'){
       steps{
-        sh 'java -jar target/myapp01-test-1.0-SNAPSHOT.jar
+        sh 'java -jar target/myapp01-test-1.0-SNAPSHOT.jar'
       }
     }
   }
