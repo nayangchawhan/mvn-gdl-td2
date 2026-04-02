@@ -12,6 +12,13 @@ pipeline{
         git branch:'master',url:'https://github.com/nayangchawhan/mvn-gdl-td2'
       }
     }
+
+    stage('redirecting'){
+      steps{
+        sh 'cd app'
+      }
+    }
+    
     stage('package'){
       steps{
         sh 'mvn clean package'
